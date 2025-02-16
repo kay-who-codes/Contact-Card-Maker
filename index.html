@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C🪪 Contact Card Maker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🪪 Contact Card Maker</h1>
+        
+        <div class="input-grid">
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="text" id="company" placeholder="Company">
+            <input type="text" id="jobPosition" placeholder="Job Position">
+            <input type="tel" id="primaryPhone" placeholder="Primary Phone">
+            <input type="tel" id="secondaryPhone" placeholder="Secondary Phone">
+            <input type="email" id="primaryEmail" placeholder="Primary Email">
+            <input type="email" id="secondaryEmail" placeholder="Secondary Email">
+            <input type="text" id="homeAddress" placeholder="Home Address">
+            <input type="text" id="workAddress" placeholder="Work Address">
+            <input type="url" id="primaryUrl" placeholder="Primary URL">
+            <input type="url" id="secondaryUrl" placeholder="Secondary URL">
+            <input type="url" id="tertiaryUrl" placeholder="Tertiary URL">
+            <input type="text" id="note" placeholder="Note">
+            <input type="" id="contactImage" placeholder="Contact image not yet working 🚫" accept="">
+        </div>
+
+        <div class="output-container">
+            <button id="downloadVCard">Download Contact Card</button>
+            <div class="qr-container">
+                <div id="qrcode"></div>
+                <button id="downloadQR">Download QR Code</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
